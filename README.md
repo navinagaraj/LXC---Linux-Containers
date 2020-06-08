@@ -1,5 +1,6 @@
 # LXC - Linux-Containers
 
+![Linux_Containers_logo](https://user-images.githubusercontent.com/42691369/83990953-ead8ef80-a968-11ea-8467-ca31c773edd3.png)
 
 LXC (Linux Containers) is an operating-system-level virtualization method for running multiple isolated Linux systems (containers) on a control host using a single Linux kernel.
 
