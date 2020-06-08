@@ -1,0 +1,32 @@
+                                         SETTING UP LINUX CONTAINER WITH LXC 
+
+
+INSTALL BELOW REQUIRED :
+
+sudo apt-get install lxc
+sudo apt-get install lxc-templates
+sudo apt-get install wget
+sudo apt-get install bridge-utils
+
+CHECK ALL ARE READY TO GO :
+
+sudo apt-get install lxc-checkconfig
+
+LETS CREAT LXC-CONTAINER :
+
+sudo lxc-create -n <container-name> -t <template> 
+sudo lxc-ls
+
+
+“template”  is the short name of an existing 'lxc-template' script that is called by lxc-create, eg.
+busybox, debian, fedora, ubuntu or sshd.  Refer to the examples in /usr/share/lxc/templates for details
+of the expected script structure.  Alternatively, the full path to an executable template  script can also
+be passed as a parameter.  "none" can be used to force lxc-create to skip rootfs creation.
+
+START A NEW CREATED  CONTAINER :
+
+sudo lxc-info -n <Container-name> ( Query information about a container ).
+sudo lxc-start -n <Container-name> ( Run an application inside a container ).
+sudo lxc-attach -a <Container-name> ( Start a process inside a running container ).
+sudo lxc-console -n <Container-name> (  Launch a console for the specified container ).
+sudo lxc-stop -n <Container-name> ( Stop the application running inside a container ).
