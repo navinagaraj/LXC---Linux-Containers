@@ -1,4 +1,4 @@
-# LXC - Linux-Containers
+# LXC - Containers
 
 ![Linux_Containers_logo](https://user-images.githubusercontent.com/42691369/83990953-ead8ef80-a968-11ea-8467-ca31c773edd3.png)
 
